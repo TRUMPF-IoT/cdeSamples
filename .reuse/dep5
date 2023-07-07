@@ -3,6 +3,10 @@ Upstream-Name: CDESDK
 Upstream-Contact:  <>
 Source: https://github.com/TRUMPF-IoT/cdeSDK
 
+Files:  src/MyCDESampleService/*
+Copyright: 2009-2022 TRUMPF Laser GmbH, authors: C-Labs
+License: MPL-2.0
+
 Files:  src/NMITestRelay/CDMyNewNMIDemo/ClientBin/Images/*
 Copyright: 2009-2022 TRUMPF Laser GmbH, authors: C-Labs
 License: MPL-2.0
