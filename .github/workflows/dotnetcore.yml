@@ -58,15 +58,15 @@ jobs:
     - name: Test
       run: dotnet test './src/cdeSamples.sln' --configuration Debug --no-build --no-restore --verbosity normal
       
-    - name: Gather artifacts
-      run: (robocopy .\bin\ .\artifacts\ *.CDEX *.CDEP *.nupkg *.snupkg *.msi *.vsix cdePackager* /s /np) ^& IF %ERRORLEVEL% LEQ 1 exit 0
-      shell: cmd
+#    - name: Gather artifacts
+#      run: (robocopy .\bin\ .\artifacts\ *.CDEX *.CDEP *.nupkg *.snupkg *.msi *.vsix cdePackager* /s /np) ^& IF %ERRORLEVEL% LEQ 1 exit 0
+#      shell: cmd
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: CDESDK
-        path: ./artifacts
+#    - name: Upload artifacts
+#      uses: actions/upload-artifact@v1
+#      with:
+#        name: CDESDK
+#        path: ./artifacts
 
     - name: REUSE Compliance Check
       run: |
