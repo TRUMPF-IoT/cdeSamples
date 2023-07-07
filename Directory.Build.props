@@ -7,12 +7,6 @@
     <cdeDebugConfig>$(Configuration)</cdeDebugConfig>
     <cdeDebugProductSuffix> ($(Configuration))</cdeDebugProductSuffix>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(MSBuildProjectName)' != 'cdeUpdater'">
-    <BaseOutputPath>$(SolutionDir)..\bin\$(Configuration)\$(MSBuildProjectName)\</BaseOutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'cdeUpdater'">
-    <BaseOutputPath>$(MSBuildProjectDir)..\..\bin\$(Configuration)\$(MSBuildProjectName)\</BaseOutputPath>
-  </PropertyGroup>
   <PropertyGroup>
     <OutputPath>$(BaseOutputPath)</OutputPath>
   </PropertyGroup>

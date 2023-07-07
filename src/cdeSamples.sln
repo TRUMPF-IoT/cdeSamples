@@ -49,6 +49,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Licenses", "_Licenses", "{
 		..\.reuse\dep5 = ..\.reuse\dep5
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCDESampleService", "MyCDESampleService\MyCDESampleService.csproj", "{B5324021-DEFA-4C10-870F-AD89624429AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Files", "_Solution Files", "{275D8BA3-E7E2-43BF-83AB-F66953AF2AB7}"
+	ProjectSection(SolutionItems) = preProject
+		..\Directory.Build.props = ..\Directory.Build.props
+		..\Directory.Build.targets = ..\Directory.Build.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -307,6 +315,26 @@ Global
 		{555547A4-164F-408A-B1DC-4D53F27C0847}.Release|x64.Build.0 = Release|Any CPU
 		{555547A4-164F-408A-B1DC-4D53F27C0847}.Release|x86.ActiveCfg = Release|Any CPU
 		{555547A4-164F-408A-B1DC-4D53F27C0847}.Release|x86.Build.0 = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|x64.Build.0 = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Debug|x86.Build.0 = Debug|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|ARM.Build.0 = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|ARM64.Build.0 = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|x64.ActiveCfg = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|x64.Build.0 = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|x86.ActiveCfg = Release|Any CPU
+		{B5324021-DEFA-4C10-870F-AD89624429AB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
