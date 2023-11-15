@@ -92,14 +92,7 @@ namespace CDMyWebToMeshSample
 
         public static bool CheckCommandLineFlag(string strFlagToCheck)
         {
-            bool bResult = false;
-            string strValue;
-            if (TheBaseAssets.MyCmdArgs.TryGetValue(strFlagToCheck, out strValue))
-            {
-                bool.TryParse(strValue, out bResult);
-            }
-
-            return bResult;
+            return TheCommonUtils.CBool(TheBaseAssets.MySettings.GetSetting(strFlagToCheck));
         }
 
         public static bool QueryIntFromDictionary(Dictionary<string, string> d, string strKey, out int value)
