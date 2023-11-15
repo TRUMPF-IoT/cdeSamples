@@ -34,7 +34,7 @@ jobs:
         config-file: .\nuget.config
         owner: ${{secrets.NUGETORG_APIKEY_OWNER}}
       env:
-        NUGET_AUTH_TOKEN: ${{secrets.NUGETORG_APIKEY}}
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         
     # gitversion requires full history and tags
     - name: Fetch unshallow
