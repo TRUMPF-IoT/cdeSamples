@@ -6,7 +6,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net60</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>dotnet-SampleWorkerService-AB112C4B-D2A3-48C4-A291-1222416458AC</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 	  <ContainerDevelopmentMode>Fast</ContainerDevelopmentMode>
