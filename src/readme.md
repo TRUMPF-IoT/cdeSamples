@@ -34,4 +34,7 @@ Small sample plugin showing how to inject data coming from a URL endpoint into a
 
 The C-DEngine Cloud and connecivity Security can be modified and extended. This project is a great starting point for a custom CryptoLib
 
+### MyCDESampleService
+
+A sample Relay project that will work in a docker environment as a ASP.NET Application using .NET 6
 

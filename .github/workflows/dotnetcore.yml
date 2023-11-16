@@ -16,18 +16,25 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2 
 
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
 
-    - name: Setup .NET 6
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0.*
+        dotnet-version: |
+          8.0
+          7.0
+          6.0
+        source-url: https://api.nuget.org/v3/index.json
         config-file: .\nuget.config
+        owner: ${{secrets.NUGETORG_APIKEY_OWNER}}
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         
     # gitversion requires full history and tags
     - name: Fetch unshallow
@@ -58,15 +65,15 @@ jobs:
     - name: Test
       run: dotnet test './src/cdeSamples.sln' --configuration Debug --no-build --no-restore --verbosity normal
       
-    - name: Gather artifacts
-      run: (robocopy .\bin\ .\artifacts\ *.CDEX *.CDEP *.nupkg *.snupkg *.msi *.vsix cdePackager* /s /np) ^& IF %ERRORLEVEL% LEQ 1 exit 0
-      shell: cmd
+#    - name: Gather artifacts
+#      run: (robocopy .\bin\ .\artifacts\ *.CDEX *.CDEP *.nupkg *.snupkg *.msi *.vsix cdePackager* /s /np) ^& IF %ERRORLEVEL% LEQ 1 exit 0
+#      shell: cmd
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: CDESDK
-        path: ./artifacts
+#    - name: Upload artifacts
+#      uses: actions/upload-artifact@v1
+#      with:
+#        name: CDESDK
+#        path: ./artifacts
 
     - name: REUSE Compliance Check
       run: |

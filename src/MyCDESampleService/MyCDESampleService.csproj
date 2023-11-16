@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c0282090-2709-4bc3-b8ff-e4ab4de1e351</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  <ContainerDevelopmentMode>Fast</ContainerDevelopmentMode>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<DockerfileRunArguments>-p "8715:8715" -p "4844:4844" -e "LocalFolder=/app/bin/Debug/net6.0" -e "TZ=America/Los_Angeles" -e "CDE_DEBUG=1" -e "CDE_DNS_NAME=default-gw.me" </DockerfileRunArguments>
+	</PropertyGroup>
+
+	<ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="C-DEngine" Version="*-*" />
+		<PackageReference Include="cdeASPNet" Version="5.*" />
+		<PackageReference Include="CDMyNMIHtml5RT" Version="*-*" />
+	</ItemGroup>
+</Project>
